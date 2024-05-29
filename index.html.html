@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Rick and Morty</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#characters" class="hover:underline">Characters</a></li>
+                    <li><a href="#video" class="hover:underline">Video</a></li>
+                    <li><a href="#fun-fact" class="hover:underline">Fun Fact</a></li>
+                    <li><a href="#info" class="hover:underline">Information</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96" style="background-image: url('https://via.placeholder.com/1200x400');">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+            <div class="text-center text-white">
+                <h2 class="text-4xl font-bold">Rick and Morty</h2>
+                <p class="mt-4">An animated series that follows the misadventures of Rick Sanchez and his good-hearted but fretful grandson, Morty Smith.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto p-8">
+        <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Who are Rick and Morty?</h2>
+            <p>Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures.</p>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded shadow-md">
+            <img src="https://via.placeholder.com/300x300" alt="Rick Sanchez" class="w-full h-64 object-cover rounded">
+            <h3 class="text-xl font-bold mt-4">Rick Sanchez</h3>
+            <p>Rick Sanchez is a genius scientist and alcoholic whose inventions and experiments serve as the basis for the episodes.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-md">
+            <img src="https://via.placeholder.com/300x300" alt="Morty Smith" class="w-full h-64 object-cover rounded">
+            <h3 class="text-xl font-bold mt-4">Morty Smith</h3>
+            <p>Morty Smith is Rick's good-hearted but fretful grandson who is frequently dragged into Rick's misadventures.</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="container mx-auto p-8">
+        <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Watch the Trailer</h2>
+            <iframe class="w-full h-64 rounded" src="https://www.youtube.com/embed/hl1U0bxTHbY" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section class="container mx-auto p-8">
+        <div class="bg-white p-6 rounded shadow-md text-center">
+            <h2 class="text-2xl font-bold mb-4">Quote</h2>
+            <p class="italic">"Wubba Lubba Dub Dub!" - Rick Sanchez</p>
+        </div>
+    </section>
+
+    <!-- Fun Fact Section -->
+    <section id="fun-fact" class="container mx-auto p-8">
+        <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Fun Fact</h2>
+            <p>Rick's catchphrase "Wubba Lubba Dub Dub" is actually a cry for help. It means "I am in great pain, please help me" in Birdperson's native language.</p>
+        </div>
+    </section>
+
+    <!-- Additional Characters Section -->
+    <section class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow-md text-center">
+            <img src="https://via.placeholder.com/150x150" alt="Summer Smith" class="w-full h-32 object-cover rounded">
+            <h3 class="text-xl font-bold mt-4">Summer Smith</h3>
+            <p>Rick's granddaughter and Morty's sister, who occasionally joins in on their adventures.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-md text-center">
+            <img src="https://via.placeholder.com/150x150" alt="Beth Smith" class="w-full h-32 object-cover rounded">
+            <h3 class="text-xl font-bold mt-4">Beth Smith</h3>
+            <p>Rick's daughter and Morty's mother, who is a horse surgeon.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow-md text-center">
+            <img src="https://via.placeholder.com/150x150" alt="Jerry Smith" class="w-full h-32 object-cover rounded">
+            <h3 class="text-xl font-bold mt-4">Jerry Smith</h3>
+            <p>Morty's insecure father who disapproves of Rick's influence over his family.</p>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section id="info" class="container mx-auto p-8">
+        <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold">Location</h3>
+                    <iframe class="w-full h-64 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509068!2d144.95373531531702!3d-37.81720997975181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5772e7e4b6a49b!2sMelbourne%20CBD%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1602823590946!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Contact Us</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="comment">Comment</label>
+                            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="comment" placeholder="Your comment"></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Rick and Morty Fan Site</p>
+        </div>
+    </footer>
+</body>
+</html>
